@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITAS - IT in Agriculture System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Site Name -->
+    <header>
+        <h1>ITAS - Information Technology in Agriculture System</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#video">Videos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to ITAS</h1>
+        <p>Integrating Technology into Agriculture</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About IT in Agriculture</h2>
+        <p>Utilizing technology like IoT, AI, and data analytics to drive sustainable and efficient farming practices.</p>
+    </section>
+
+    <!-- Image Gallery with Expandable Descriptions -->
+    <section id="gallery" class="gallery">
+        <h2>Applications of IT in Agriculture</h2>
+        <div class="gallery-container">
+            <!-- Card 1 -->
+            <div class="card" onclick="toggleDescription(this)">
+                <img src="img/image1.png" alt="Precision Farming">
+                <p>Precision Farming</p>
+                <div class="description">
+                    <p>Precision farming uses advanced technology to monitor and manage resources efficiently.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card" onclick="toggleDescription(this)">
+                <img src="img/image2.png" alt="Drones for Crop Monitoring">
+                <p>Drones for Crop Monitoring</p>
+                <div class="description">
+                    <p>Drones help in monitoring crop health, irrigation needs, and detecting pests early.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card" onclick="toggleDescription(this)">
+                <img src="img/image3.png" alt="Smart Irrigation">
+                <p>Smart Irrigation</p>
+                <div class="description">
+                    <p>Smart irrigation systems automate water supply based on real-time soil moisture data.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card" onclick="toggleDescription(this)">
+                <img src="img/image4.png" alt="Soil Sensors">
+                <p>Soil Sensors</p>
+                <div class="description">
+                    <p>Soil sensors provide essential data on moisture, temperature, and nutrients for better crop management.</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card" onclick="toggleDescription(this)">
+                <img src="img/image5.png" alt="Automated Machinery">
+                <p>Automated Machinery</p>
+                <div class="description">
+                    <p>Automated machinery like tractors and harvesters increase productivity and reduce labor costs.</p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="card" onclick="toggleDescription(this)">
+                <img src="img/image6.png" alt="Data Analytics">
+                <p>Data Analytics</p>
+                <div class="description">
+                    <p>Data analytics helps in making informed decisions by analyzing trends and predicting yields.</p>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="card" onclick="toggleDescription(this)">
+                <img src="img/image7.png" alt="Weather Prediction">
+                <p>Weather Prediction</p>
+                <div class="description">
+                    <p>Advanced weather prediction systems help farmers plan planting and harvesting activities.</p>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="card" onclick="toggleDescription(this)">
+                <img src="img/image8.png" alt="Blockchain for Supply Chain">
+                <p>Blockchain for Supply Chain</p>
+                <div class="description">
+                    <p>Blockchain technology ensures transparency and traceability in the agricultural supply chain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section in a 2x2 Grid Layout -->
+    <!-- Video Section -->
+<section id="video" class="video-section">
+    <h2>Videos on IT in Agriculture</h2>
+    <div class="video-container">
+        <!-- Video 1 Thumbnail -->
+        <div class="video-thumbnail" onclick="playVideo('JeU_EYFH1Jk')">
+            <img src="https://img.youtube.com/vi/JeU_EYFH1Jk/0.jpg" alt="Video 1 Thumbnail">
+        </div>
+        <!-- Video 2 Thumbnail -->
+        <div class="video-thumbnail" onclick="playVideo('IRykjZ4Aygs')">
+            <img src="https://img.youtube.com/vi/IRykjZ4Aygs/0.jpg" alt="Video 2 Thumbnail">
+        </div>
+        <!-- Video 3 Thumbnail -->
+        <div class="video-thumbnail" onclick="playVideo('RFl1lAGT1ow')">
+            <img src="https://img.youtube.com/vi/RFl1lAGT1ow/0.jpg" alt="Video 3 Thumbnail">
+        </div>
+        <!-- Video 4 Thumbnail -->
+        <div class="video-thumbnail" onclick="playVideo('8Cda6QTnfbY')">
+            <img src="https://img.youtube.com/vi/8Cda6QTnfbY/0.jpg" alt="Video 4 Thumbnail">
+        </div>
+    </div>
+
+    <!-- Video Player -->
+    <div id="video-player" class="video-player" style="display: none;">
+        <iframe id="video-frame" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button onclick="closeVideo()">Close</button>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ITAS - Information Technology in Agriculture System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
